@@ -1,4 +1,4 @@
-import {Component, h} from '@stencil/core';
+import {Component, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 'stenciljs-button',
@@ -7,9 +7,11 @@ import {Component, h} from '@stencil/core';
 })
 export class StenciljsButton {
 
+  @Prop() appearance: 'primary' | 'secondary' | 'danger' | 'warning' = 'primary';
+
   render() {
     return (
-      <button>
+      <button class={this.appearance}>
         <slot></slot>
       </button>
     );

@@ -1,13 +1,46 @@
-@import 'src/styles/colors.scss';
+@import 'src/styles/colors';
 
 button {
-  padding: 5px 10px 5px 10px;
-
-  background-color: $primary-color;
-  color: $primary-text-color;
+  padding: 10px 10px 10px 10px;
 
   border: 0;
   border-radius: 5px;
 
   cursor: pointer;
+}
+
+.primary {
+  background-color: $primary-color;
+  color: $primary-text-color;
+}
+
+.primary:hover {
+  background-color: lighten($primary-color, 10%);
+}
+
+.secondary {
+  background-color: $secondary-color;
+  color: $secondary-text-color;
+}
+
+.secondary:hover {
+  background-color: darken($secondary-color, 10%);
+}
+
+.danger {
+  background-color: $danger-color;
+  color: $danger-text-color;
+}
+
+.danger:hover {
+  background-color: lighten($danger-color, 10%);
+}
+
+.warning {
+  background-color: $warning-color;
+  color: $warning-text-color;
+}
+
+.warning:hover {
+  background-color: lighten($warning-color, 10%);
 }

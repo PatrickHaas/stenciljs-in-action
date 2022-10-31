@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface StenciljsButton {
+        "appearance": 'primary' | 'secondary' | 'danger' | 'warning';
     }
 }
 declare global {
@@ -22,6 +23,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface StenciljsButton {
+        "appearance"?: 'primary' | 'secondary' | 'danger' | 'warning';
     }
     interface IntrinsicElements {
         "stenciljs-button": StenciljsButton;
